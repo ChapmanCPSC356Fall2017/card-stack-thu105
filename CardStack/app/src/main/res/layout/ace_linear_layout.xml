@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/a"
+        android:textSize="75sp"
+        android:layout_weight="5"
+        android:textColor="@android:color/holo_red_light"/>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_weight="5"
+        android:src="@drawable/heart"
+        android:contentDescription="@string/suit" />
+    <ImageView
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+        android:layout_weight="1000"
+    android:src="@drawable/heart"
+        android:contentDescription="@string/suit" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/heart"
+        android:layout_weight="5"
+        android:rotation="180"
+        android:layout_gravity="end"
+        android:contentDescription="@string/suit" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/a"
+        android:textSize="75sp"
+        android:rotation="180"
+        android:layout_weight="5"
+        android:textColor="@android:color/holo_red_light"/>
+
+
+</LinearLayout>
