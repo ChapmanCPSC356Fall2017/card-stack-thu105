@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:onClick="onClickScreen">
+    <TextView
+        android:id="@+id/top_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="69sp"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageView
+        android:id="@+id/top_p"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/top_num"
+        android:contentDescription="@string/suit" />
+
+    <RelativeLayout
+        android:id="@+id/h1"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/h1p1"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/suit" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/h2"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginEnd="100dp">
+        <ImageView
+            android:id="@+id/h2p1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/suit" />
+        <ImageView
+            android:id="@+id/h2p2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:rotation="180"
+            android:contentDescription="@string/suit" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/h3"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginEnd="100dp">
+        <ImageView
+            android:id="@+id/h3p3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/suit" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/h4"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginEnd="100dp">
+        <ImageView
+            android:id="@+id/h4p1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/suit" />
+        <ImageView
+            android:id="@+id/h4p2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/suit" />
+        <ImageView
+            android:id="@+id/h4p3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:rotation="180"
+            android:contentDescription="@string/suit" />
+        <ImageView
+            android:id="@+id/h4p4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/heart"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:rotation="180"
+            android:contentDescription="@string/suit" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/h5"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginEnd="100dp">
+
+        <ImageView
+            android:id="@+id/h5p5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="@string/suit" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/h6"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginEnd="100dp">
+        <ImageView
+            android:id="@+id/h6p5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/suit" />
+        <ImageView
+            android:id="@+id/h6p6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/suit" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/h7"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginEnd="100dp">
+        <ImageView
+            android:id="@+id/h7p7"
+            android:layout_width="100dp"
+            android:layout_height="300dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="200dp"
+            android:contentDescription="@string/suit" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/h8"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginEnd="115dp">
+        <ImageView
+            android:id="@+id/h8p1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:contentDescription="@string/suit" />
+        <ImageView
+            android:id="@+id/h8p2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/suit" />
+        <ImageView
+            android:id="@+id/h8p3"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/h8p1"
+            android:contentDescription="@string/suit" />
+        <ImageView
+            android:id="@+id/h8p4"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/h8p2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/suit" />
+        <ImageView
+            android:id="@+id/h8p5"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_above="@+id/h8p7"
+            android:rotation="180"
+            android:contentDescription="@string/suit" />
+        <ImageView
+            android:id="@+id/h8p6"
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_above="@+id/h8p8"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:rotation="180"
+            android:contentDescription="@string/suit" />
+        <ImageView
+            android:layout_width="100dp"
+            android:id="@+id/h8p7"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:rotation="180"
+            android:contentDescription="@string/suit" />
+        <ImageView
+            android:layout_width="100dp"
+            android:id="@+id/h8p8"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:rotation="180"
+            android:contentDescription="@string/suit" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/h9"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginEnd="115dp">
+        <ImageView
+            android:id="@+id/h9p9"
+            android:layout_width="100dp"
+            android:layout_height="300dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="200dp"
+            android:contentDescription="@string/suit" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/h10"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="115dp"
+        android:layout_marginEnd="115dp">
+        <ImageView
+            android:id="@+id/h10p10"
+            android:rotation="180"
+            android:layout_width="100dp"
+            android:layout_height="300dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:paddingBottom="200dp"
+            android:contentDescription="@string/suit" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/f"
+        android:visibility="gone"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/face"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/suit" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/bottom_p"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:rotation="180"
+        android:layout_above="@+id/bottom_num"
+        android:layout_alignEnd="@+id/bottom_num"
+        android:layout_alignRight="@+id/bottom_num"
+        android:contentDescription="@string/suit" />
+
+    <TextView
+        android:id="@+id/bottom_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="sans-serif-condensed"
+        android:rotation="180"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="69sp" />
+</RelativeLayout>

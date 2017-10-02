@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Card Stack</string>
+    <string name="a">A</string>
+    <string name="suit">Suit</string>
+</resources>
