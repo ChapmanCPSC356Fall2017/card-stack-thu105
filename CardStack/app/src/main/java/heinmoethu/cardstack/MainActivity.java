@@ -1,7 +1,6 @@
 package heinmoethu.cardstack;
 
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +10,6 @@ import android.widget.TextView;
 
 import java.util.Collections;
 import java.util.Stack;
-import java.util.StringTokenizer;
 
 public class MainActivity extends AppCompatActivity {
     private Stack<Card> cardStack = new Stack<>();
@@ -31,33 +29,21 @@ public class MainActivity extends AppCompatActivity {
         iv_top= (ImageView) findViewById(R.id.top_p);
         iv_bot= (ImageView) findViewById(R.id.bottom_p);
 
-        for (int x=0;x<=12;++x){
-            for(int y=1;y<=4;++y){
-                switch (y){
-                    case 1:
-                        c=new Card(x,Suit.SPADE);
-                        break;
-                    case 2:
-                        c=new Card(x,Suit.CLOVER);
-                        break;
-                    case 3:
-                        c=new Card(x,Suit.DIAMOND);
-                        break;
-                    case 4:
-                        c=new Card(x,Suit.HEART);
-                        break;
-                    default:
-                        c=new Card(0,Suit.SPADE);
-                        break;
-                }
-                cardStack.push(c);
-            }
+        for (int x=0;x<=12;++x){//creating the deck
+            c=new Card(x,Suit.SPADE);
+            cardStack.push(c);
+            c=new Card(x,Suit.CLOVER);
+            cardStack.push(c);
+            c=new Card(x,Suit.DIAMOND);
+            cardStack.push(c);
+            c=new Card(x,Suit.HEART);
+            cardStack.push(c);
         }
         Collections.shuffle(cardStack);
-        showCard();
+        showCard();//shows the first card
     }
 
-    private void showCard(){
+    private void showCard(){//show a card or finish
         if(cardStack.empty()){
             finish();
         }
@@ -66,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         }
         buildCard(c);
     }
-    private void buildCard(Card c){
+    private void buildCard(Card c){//displays a card
         int d;
         int color;
         switch(c.getSuit()){
@@ -133,6 +119,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+    //These methods will show the cards
     private void buildA(int d){
         rl_temp= (RelativeLayout) findViewById(R.id.h1);
         rl_temp.setVisibility(View.VISIBLE);
@@ -254,14 +241,14 @@ public class MainActivity extends AppCompatActivity {
             else
                 iv_temp.setImageResource(R.drawable.king_red);
         }
-    }
+    }//for J,Q,K
     private void emptyCard(){
         while(!traceStack.isEmpty()){
             rl_temp=(RelativeLayout) findViewById(traceStack.pop());
             rl_temp.setVisibility(View.GONE);
         }
-    }
+    }//make layout empty
     public void onClickScreen(View view) {
         showCard();
-    }
+    }//show card for each click
 }
